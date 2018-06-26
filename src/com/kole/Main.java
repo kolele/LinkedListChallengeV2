@@ -10,7 +10,6 @@ public class Main {
         ArrayList<Album> albums = new ArrayList<>();
         LinkedList<Song> playList = new LinkedList<>();
 
-
         Album rideTheLightning = new Album("RDL");
         rideTheLightning.addSongToAlbum("And justice for all", 12.22);
         rideTheLightning.addSongToAlbum("Kobas", 11.21);
@@ -19,9 +18,6 @@ public class Main {
         rideTheLightning.addToPlayList("leburda", playList);
         play(playList);
     }
-
-
-
 
     public static void play(LinkedList<Song> playList){
         ListIterator<Song> listIterator = playList.listIterator();
