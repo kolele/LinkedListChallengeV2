@@ -14,17 +14,11 @@ public class Main {
         Album rideTheLightning = new Album("RDL");
         rideTheLightning.addSongToAlbum("And justice for all", 12.22);
         rideTheLightning.addSongToAlbum("Kobas", 11.21);
-        addToPlayList("prva",22, playList);
-        addToPlayList("druga",22, playList);
         play(playList);
     }
 
 
-    public static void addToPlayList(String songName, double songDuration, LinkedList<Song> playlist) {
 
-        playlist.add(new Song(songName,songDuration));
-
-    }
 
     public static void play(LinkedList<Song> playList){
         ListIterator<Song> listIterator = playList.listIterator();
