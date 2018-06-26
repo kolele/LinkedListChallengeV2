@@ -44,7 +44,7 @@ public class Album {
 
     public boolean addToPlayList(String songName, LinkedList<Song> playList){
         if (findSong(songName)!=null){
-            System.out.println("Added song " + songName + " to the album ");
+            System.out.println("Added song " + songName + " to the playlist ");
             playList.add(findSong(songName));
         } else {
             System.out.println("Did not found song " + songName + " in album");
