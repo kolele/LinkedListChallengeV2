@@ -18,4 +18,22 @@ public class Album {
     public ArrayList<Song> getSongs() {
         return songs;
     }
+
+    public void addSongToAlbum(String songName, double songDuration){
+        if (findSong(songName)==null){
+            this.songs.add(new Song(songName,songDuration));
+        }
+    }
+
+    private Song findSong(String songName){
+        for (Song tempSong : this.songs){
+            if (tempSong.getName().equals(songName)){
+                return tempSong;
+            }else {
+                return null;
+            }
+        }return null;
+    }
+
+
 }
