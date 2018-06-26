@@ -16,6 +16,7 @@ public class Main {
         rideTheLightning.addSongToAlbum("Kobas", 11.21);
         rideTheLightning.addToPlayList("Kobas", playList);
         rideTheLightning.addToPlayList("And justice for all", playList);
+        rideTheLightning.addToPlayList("leburda", playList);
         play(playList);
     }
 
@@ -24,6 +25,6 @@ public class Main {
 
     public static void play(LinkedList<Song> playList){
         ListIterator<Song> listIterator = playList.listIterator();
-        System.out.println("Now playing " + listIterator.hasNext());
+        System.out.println("Now playing " + listIterator.next().toString());
     }
 }

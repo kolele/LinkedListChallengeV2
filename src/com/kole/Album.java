@@ -46,7 +46,10 @@ public class Album {
         if (findSong(songName)!=null){
             System.out.println("Added song " + songName + " to the album ");
             playList.add(findSong(songName));
+        } else {
+            System.out.println("Did not found song " + songName + " in album");
         }return false;
+
     }
 
 
