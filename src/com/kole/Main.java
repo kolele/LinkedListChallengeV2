@@ -14,6 +14,8 @@ public class Main {
         Album rideTheLightning = new Album("RDL");
         rideTheLightning.addSongToAlbum("And justice for all", 12.22);
         rideTheLightning.addSongToAlbum("Kobas", 11.21);
+        rideTheLightning.addToPlayList("Kobas", playList);
+        rideTheLightning.addToPlayList("And justice for all", playList);
         play(playList);
     }
 

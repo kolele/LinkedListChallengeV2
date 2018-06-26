@@ -36,6 +36,7 @@ public class Album {
 
     public boolean addToPlayList(int songIndex, LinkedList<Song> playlist) {
         if (songIndex>=0 && songIndex<=this.songs.size()){
+            System.out.println("Added song " + this.songs.get(songIndex).getName());
             playlist.add(this.songs.get(songIndex));
             return true;
         }return false;
